@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+This page is shown when the extension button is clicked, because the
+"browser_action" field in manifest.json contains the "default_popup" key with
+value "popup.html".
+-->
+<html>
+<head>
+  <title>OpenU</title>
+  <style type="text/css">
+  body {
+    margin: 10px;
+    white-space: nowrap;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .field > span {
+    display: block;
+    font-size: 15px;
+  }
+
+  .field {
+    margin-bottom: 5px;
+  }
+
+  </style>
+
+  <!--
+  - JavaScript and HTML must be in separate files: see our Content Security
+  - Policy documentation[1] for details and explanation.
+  -
+  - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+-->
+<script src="openu.js"></script>
+</head>
+
+<body>
+  <h1>Your login data</h1>
+    <div class="field">
+      <span>username</span>
+      <input type="text" name="username" id="txtUsername" />
+    </div>
+
+    <div class="field">
+      <span>password</span>
+      <input type="password" name="password" id="txtPassword" />
+    </div>
+
+    <div class="field">
+      <span>id</span>
+      <input type="text" name="id" id="txtId" />
+    </div>
+    <label><input type="checkbox" name="checkbox" id="ckInstant" value="1">instant login</label>
+    <input type="submit" id="btnSave" value="Save" />
+    <h3> Build By gilel </h3>
+</body>
+</html>

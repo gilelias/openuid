@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "OpenU ID",
+  "description": "Remmembers your login",
+  "version": "1.2",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*.openu.ac.il/",
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}
